@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 40px 0 40px;
+}
+
+.logo{
+    text-align: right;
+    color: #6D3EF3;
+}
+
+#burguer{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #363333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#home{
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6D3EF3;
+    text-decoration: none;
+}
+
+.container-1{
+    margin: 50px 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.content-left{
+    margin-top: -80px;
+}
+
+.content-left h1{
+    font-size: 40px;
+    color: #6D3EF3;
+}
+
+.content-left p{
+    margin: 20px 0 0 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.buttons{
+    display: none;
+}
+
+.content-right-image img{
+    max-width: 550px;
+}
+
+.container-2{
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+.container-2 > .more-info > *{
+    padding-bottom: 15px;
+}
+
+.container-2 > .more-info > h4{
+    color: #6D3EF3;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container-2 > .more-info a{
+    display: block;
+    text-align: right;
+    color: #363333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* @media (max-width: 780px){
+
+    #burguer{
+        display: none;
+    }
+
+    .container-1{
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    .content-left{
+        margin-top: 1em;
+    }
+
+    .content-left h1{
+        font-size: 30px;
+    }
+
+    .buttons{
+        display: none;
+    }
+    
+    .content-right-image img{
+        width: 350px;
+    }
+
+    .container-2{
+        margin-top: -40px;
+    }
+} */
+
+@media (max-width: 785px){
+
+    .logo{
+        position: absolute;
+        top: 5%;
+        left: 32%;
+    }
+
+    #burguer{
+        display: block;
+        position: absolute;
+        right: -90%;
+        top: 1%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .container-1{
+
+        margin: 5em -0.2px;
+        background-color: #6e3ef37f;
+        height: 70vh;
+        padding: 8px;
+    }
+
+    .content-left > h1{
+        color: #fff;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .content-left > p{
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .buttons{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .buttons > a{
+        padding: 20px;
+    }
+
+    .buttons > #btn-services{
+        color: #fff;
+        text-decoration: none;
+        background-color: #4F28BD;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .buttons > #btn-contact{
+        color: #363333;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #363333;
+    }
+
+    .content-left > *{
+        margin-bottom: -20px;
+    }
+
+    .content-right-image{
+        display: none;
+    }
+
+    .container-2{
+        padding: 20px;
+        border: 1px solid #D3D3D3;
+        flex-wrap: wrap;
+    }
+}
